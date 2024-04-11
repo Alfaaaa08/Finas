@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+    
+  <head>
+    <meta charset="UTF-8" />
+    <title>Finanças</title>
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <aside class="menu white-bg">
+      <div class="main-content menu-content">
+        <h1 class="main-logo">
+          <a href="#home">Finas</a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#gallery">Login</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    <section class="section grid">
+      <a href="">
+        <div class="grid-element-container first-element">
+            <i id="icon-money" class="fa fa-money"></i>
+            <p id="title-controle-financeiro">Financial Planning</p>
+          </div>
+      </a>
+      <a href="">
+        <div class="grid-element-container second-element"></div>
+      </a>
+      <a href="">
+        <div class="grid-element-container third-element"></div>
+      </a>
+    </section>
+  </body>
+</html>
