@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cairoPlay';
+    font-weight: 200;
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+:root {
+    --primary-color: rgb(128, 128, 128);
+    --white-color: rgb(24, 24, 24);
+    --light-grey-color: rgb(194, 194, 194);
+    --secondary-color: rgb(128, 128, 128);
+    --gap: 3rem;
+    --opacity-menu: 80%;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'cairoPlay'
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    border-bottom: 1px solid var(--light-grey-color);
+    opacity: var(--opacity-menu);
+  }
+
+.menu-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h2 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    padding-left: 20px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    opacity: var(--opacity-menu);
+    position: relative;
+    transition: font-size 200ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    font-size: 2rem;
+}
+
+.main-logo a{
+    font-size: 26px;
+    padding-left: 10px;
+    color: var(--secondary-color);
+    opacity: var(--opacity-menu)
+}
+
+.menu-spacing {
+    height: 64px;
+}
+
+.section {
+    background-color: var(--white-color);
+    min-height: 100vh;
+}
+
+h2 {
+    color: var(--light-grey-color);
+}
+
+.grid-element-container {
+    height: 350px;
+    width: 350px;
+    border: 2px solid var(--primary-color)
+}
+
+.grid {
+    gap: 10px;
+    padding-top: 500px;
+    padding-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.first-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#icon-money {
+    padding-bottom: 45px;
+    color: var(--light-grey-color);
+    font-size: 70px;
+}
+
+#title-controle-financeiro {
+    font-size: 30px;
+    color: var(--light-grey-color);
+    font-weight: 800;
+}
