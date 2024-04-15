@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: rgb(128, 128, 128);
-    --white-color: rgb(24, 24, 24);
+    --black-background: rgb(24, 24, 24);
     --light-grey-color: rgb(194, 194, 194);
     --secondary-color: rgb(128, 128, 128);
     --gap: 3rem;
@@ -31,7 +31,7 @@ a {
 }
 
 .menu {
-    background: var(--white-color);
+    background: var(--black-background);
     position: fixed;
     top: 0;
     left: 0;
@@ -91,11 +91,12 @@ a {
 }
 
 .menu-spacing {
-    height: 64px;
+    background-color: var(--black-background);
+    min-height: 100vh;
 }
 
 .section {
-    background-color: var(--white-color);
+    background-color: var(--black-background);
     min-height: 100vh;
 }
 
