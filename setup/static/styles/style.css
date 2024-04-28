@@ -18,6 +18,11 @@
 * {
     margin: 0rem;
     padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-background);
 }
 
 html {
@@ -92,7 +97,7 @@ a {
 
 .menu-spacing {
     background-color: var(--black-background);
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 .section {
@@ -136,4 +141,38 @@ h2 {
     font-size: 30px;
     color: var(--light-grey-color);
     font-weight: 800;
+}
+
+
+.input-wrapper {
+    background-color: rgb(59, 59, 59);
+    width: 153px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 80px;
+    padding: 0px 8px 0px 8px;
+    margin-top: 100px;
+    border-radius:10px;
+    height: 30px;
+}
+
+.input-wrapper i {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-field {
+    background-color: transparent;
+    color: white;
+    font-family: cairoPlay;
+    font-weight: 800;
+    border-style: none;
+    height: 25px;
+}
+
+.category-field:focus-visible {
+    outline: none;
 }

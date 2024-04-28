@@ -8,10 +8,10 @@
           <a href="{% url element.a_href %}">
             <div class="{{ element.div_class }}">
                 <i id="{{ element.i_id }}" class="{{ element.i_class }}"></i>
-                <p id="{{ element.p_id }}">Financial Planning</p>
+                <p id="{{ element.p_id }}">{{ element.p_content }}</p>
               </div>
           </a>
         {% endfor %}
       {% endif %}  
     </section>
-{% endblock %}
+{% endblock %} 
