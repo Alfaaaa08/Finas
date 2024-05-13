@@ -164,7 +164,7 @@ h2 {
     font-size: 16px;
 }
 
-.category-field {
+.category-input {
     background-color: transparent;
     color: white;
     font-family: cairoPlay;
@@ -173,6 +173,39 @@ h2 {
     height: 25px;
 }
 
-.category-field:focus-visible {
+.category-input:focus-visible {
     outline: none;
+}
+
+
+
+#categories-wrapper {
+    background-color: rgb(8, 8, 8);
+    width: 280px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 80px;
+    padding: 0px 8px 0px 8px;
+    margin-top: 100px;
+    border-radius:10px;
+    height: 30px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.category-field {
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+
+#categories-wrapper i {
+    color: grey;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute; /* Add this line */
+    right: 12px;
 }
